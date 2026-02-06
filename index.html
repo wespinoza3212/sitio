@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>San Valentín 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="moon"></div>
+
+    <div class="envelope" onclick="openEnvelope()"></div>
+
+    <div class="card" id="card">
+        <h5><i>¿Para ti?</i> 💘</h5>
+        <br>
+        <h2>¿Quieres ser mi San Valentín? 💘</h2>
+        <br>
+        <p>💖💖💖</p>
+        <br>
+        <p><i>- De Wilson</i></p>
+        <br>
+
+        <button class="yes" onclick="sayYes()">Sí</button>
+        <button class="no" onmouseover="moveNo(this)">No</button>
+
+        <div class="response" id="response"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
