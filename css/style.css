@@ -115,7 +115,7 @@ body {
         transform: translate(-50%, -50%) scale(1);
     }
 
-    .card h2 {
+    .card h2,h5,i {
         color: #e91e63;
     }
 
@@ -145,3 +145,4 @@ button {
     color: #e91e63;
     font-weight: bold;
 }
+
