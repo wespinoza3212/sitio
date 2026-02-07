@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>San Valentín 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 🌙 Luna -->
+    <div class="moon"></div>
+
+    <!-- 💌 Sobre -->
+    <div class="envelope" onclick="openEnvelope()"></div>
+
+    <!-- 💌 Tarjetas -->
+    <div class="card" id="card0">
+        <h5><i>¿Para ti?</i> 💘</h5>
+        <p>Esta es la primer cosita que quiero dedicarte 💕</p>
+        <p>Se trata del poema Loco, escrito por Ricardo Camacho. 💕</p>
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card1">
+
+        <p>Estoy absolutamente loco por ti ✨</p>
+        <br/>
+        <p>No tengo otra forma de decirlo, porque si bien podria decir que,</p>
+        <p>cuando te veo, se alteran mis sentidos, o que cuando me tocas</p>
+        <p>aceleras mis latidos, y talvez que cuando me besas </p>
+        <p>pierdo el suelo, y el habla, y el sonido.</p>
+        
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card2">
+
+        <p>Podria decir que contigo pierdo la cordura ✨ </p>
+        <br/>
+        <p>Y es que, si de algo tengo ganas, es de fundirme  en tu piel<p/>
+        <p> como si el ahora se perdiera en el mañana.</p>
+        <br/>
+        <p>Que me ganan estas malditas ansias de tenerte, aunque sea </p>
+        <p> por un momento, o si quieres, para toda la bendita vida.</p>
+        <p>💖💖💖</p>
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card3">
+
+        <p>Por que sí, estoy loco por ti ✨<p/>
+        <br/>
+        <p>Y ya me he cansado de fingirme cuerdo sabiendo que no hay</p>
+        <p>mayor amor que aquel que viene de un desquiciado envuelto </p>
+        <p>en las llamas de tu encanto, porque...</p>
+        <br/>
+        <p>  Te necesito más que al aire que respiro.</p>
+        <p>  Te añoro más que el agua en verano.</p>
+        <p>  Te deseo más que a todas mis mañanas.</p>
+        <br />
+        <p>Asi que pueden llamarme loco, si por loco se sobreentiende</p>
+        <p>que estoy profunda, total e irremediablemente loco por ti.</p>
+        <br/>
+        <p>💕💕💕</p>
+
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card4">
+        <h5><i>¿Para tí?</i> 💘</h5>
+        <br>
+        <h4>Hoy quiero dedicarte algo especial. 💘</h4>
+        <h4>Porque cada vez que te veo, siento una alegría inmensa.</h4>
+        <h4>Eres mis ganas de hacer cosas nuevas solo para ti.</h4>
+        <br>
+        <p>💖💖💖</p>
+        <h3>¿Quieres ser mi San Valentín? 💘</h3>
+        <p>💖💖💖</p>
+        <br>
+        <p><i>- De Wilson</i></p>
+        <br>
+
+        <div class="buttons">
+            <button class="yes" onclick="sayYes()">Sí Quiero</button>
+            <button class="no" onclick="hideNo(this)">No Quiero</button>
+        </div>
+
+        <div class="response" id="response"></div>
+    </div>
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
