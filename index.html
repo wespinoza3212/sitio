@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>San Valentín 💖</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 🌙 Luna -->
+    <div class="moon"></div>
+
+    <!-- 💌 Sobre -->
+    <div class="envelope" onclick="openEnvelope()"></div>
+
+    <!-- 💌 Tarjetas -->
+    <div class="card" id="card0">
+        <h2><i>¿Para ti?</i> 💘</h2>
+        <br />
+        <br />
+        <h3><center>Gracias a tí</center></h3>
+        <br />
+        <h3><center>Cada momento contigo se siente único.</center></h3>
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card1">
+        <br />
+        <h3><center>Tu sonrisa hace que cualquier día gris se vuelva brillante. ✨.</center></h3>
+        <br />
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card2">
+        <br />
+        <h3><center>Cada día contigo es un recuerdo que quiero guardar para siempre.</center></h3>
+        <br />
+        
+        <div class="arrow" onclick="nextCard()">➡️</div>
+    </div>
+
+    <div class="card" id="card3">
+
+        <h3><center>Entre tus locuras y mis olvidos, aprendí que reír juntos es todo 😍💫 </center></h3>
+    <p><center>💕💕💕</center></p>
+
+    <div class="arrow" onclick="nextCard()">➡️</div>
+</div>
+
+    <div class="card" id="card4">
+        <h5><i>¿Para tí?</i> 💘</h5>
+        <br>
+        <h4>Hoy quiero dedicarte algo especial. 💘</h4>
+        <h4>Por que cada vez que te veo, siento una alegría inmensa.</h4>
+        <h4>Eres mis ganas de hacer cosas nuevas solo para ti.</h4>
+        <br>
+        <p>💖💖💖</p>
+        <h3>¿Quieres ser mi San Valentín? 💘</h3>
+        <p>💖💖💖</p>
+        <br>
+        <p><i>- De Wilson</i></p>
+        <br>
+
+        <div class="buttons">
+            <button class="yes" onclick="sayYes()">Sí Quiero</button>
+            <button class="no" onclick="hideNo(this)">No Quiero</button>
+        </div>
+
+        <div class="response" id="response"></div>
+    </div>
+
+   
+
+    <!-- Confetti -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+</body>
+</html>
